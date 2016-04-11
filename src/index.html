@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>Angular2 Seed</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+  </head>
+  <body>
+
+    <image-selector data-image="'sdfsdfs'">
+        Загрузка...
+    </image-selector>
+    
+    <script src="polyfills.bundle.js"></script>
+    <script src="vendor.bundle.js"></script>
+    <script src="app.bundle.js"></script>
+    <script>
+        ImageSelectorApp('http://nomination-ubrr.localhost/moy-put/upload','http://nomination-ubrr.localhost/moy-put/photo', function(finish){
+            console.log(finish);
+        },'http://nomination-ubrr.localhost');
+    </script>
+  </body>
+</html>

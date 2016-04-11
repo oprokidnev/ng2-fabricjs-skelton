@@ -1,0 +1,22 @@
+<div class="image-container">
+    <div class="canvas" style="background-color:#fff;">
+        <canvas id="image-container-workspace"></canvas>
+    </div>
+    <div class="controlls">
+        <div class="image-controlls" style="text-align:center;">
+            <a href="javascript:void(0)" class="tool-btn tool-btn_scale-up" (click)="scaleUp($event)">&nbsp;</a>
+            <a href="javascript:void(0)" class="tool-btn tool-btn_scale-down" (click)="scaleDown($event)">&nbsp;</a>
+        </div>
+        <div class="app-controlls">
+            <label for="file-uploader" id="upload-image" class="btn poll-btn">
+                Загрузить фото
+            </label>
+            <input type="file" id="file-uploader"
+                class="btn btn-primary hidden"
+                [ng-file-select]="fileSelectOptions"
+                (onUpload)="onUpload($event)">
+                
+            <a class="btn poll-btn" id="save-and-next" (click)="save($event)">Начать тест</a>
+        </div>
+    </div>
+</div>

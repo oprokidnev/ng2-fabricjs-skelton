@@ -1,0 +1,29 @@
+.image-container{
+    width:660px;
+}
+.tool-btn{
+    width: 43px;
+    height: 43px;
+    background: #f6891c url(../img/photo-icons.png) no-repeat 0 0;
+    cursor: pointer;
+    display: inline-block;
+    margin: 7px;
+    text-decoration: none;
+}
+
+.tool-btn_scale-up {
+    background-position: -118px center;
+    background-color: #009FE4;
+}
+.tool-btn_scale-down{
+    background-position: -78px center;
+    background-color: #009FE4;
+}
+.tool-btn_rotate-up{
+    background-position: -158px center;
+    background-color: #f04e23;
+}
+.tool-btn_rotate-down{
+    background-position: -198px center;
+    background-color: #f04e23;
+}
